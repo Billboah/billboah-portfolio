@@ -1,0 +1,23 @@
+@import 'animate.css';
+.app{
+  margin: 10% 5%;
+  background-color: rgb(222, 222, 231);
+  border: 1px inherit solid;
+  border-radius: 20px;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  height: 100%;
+  min-height: fit-content;
+  min-width: fit-content;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  min-width: fit-content;
+  min-height: fit-content;
+  opacity: 0;
+  transform-style: preserve-3d;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1s;
+}
+

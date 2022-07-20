@@ -1,0 +1,88 @@
+.work1{
+  margin: 5%;
+}
+.work1 h2{
+  font-size: 50px;
+}
+
+.works{
+  margin-bottom: 30px;
+}
+
+.grid-container{
+  padding: 50px 0;
+}
+
+.works-section{
+  height: 250px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background: center;
+  background-size: cover;   
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+}
+article{
+  background-color: rgba(0, 0, 0,0.8);
+  height: 100%;
+  border-radius: 10px;
+}
+article:hover{
+  opacity: 0;
+}
+.works .text{
+  color: white;
+}
+.works ul{
+  display: flex;
+  list-style: none;
+  margin: 0;
+padding: 0;
+}
+.works li{
+  margin-top: -20px;
+  margin-right: 15px;
+  font-size: 10px;
+}
+.works h4{
+  margin-top: -5px;
+}
+.works .text{
+  height: 100%;
+  text-align: center;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.works p{
+  font-size: 15px;
+  margin-top: -10px;
+}
+.works h3{
+  font-size: 40px;
+}
+.works a{
+  text-decoration: none;
+}
+@media screen and (min-width: 850px) {
+  .grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 0px 50px; 
+
+  }
+  .works-section{
+    height: 300px;
+    
+  }
+  .works p{
+    font-size: 20px;
+    margin-top: 0;
+  }
+  .works h3{
+    font-size: 50px;
+  }
+  
+}

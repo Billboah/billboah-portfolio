@@ -1,0 +1,56 @@
+.service{
+              padding: 20px;
+}
+.service h2{
+              font-size: 2.5rem;
+              margin-bottom: calc(2.5rem * 1.5);
+}
+.tag-line{
+              font-size: 20px;
+}
+
+
+.text-center{
+              text-align: center;
+}
+.service-row{
+              display: flex;
+              justify-content: space-evenly;
+              align-items: center;
+              padding: 20px;
+              margin: 20px 0;
+}
+.service-image{
+              order: 2;
+}
+.service-image-reverse{
+              order: 1;
+}
+.service-list{
+              order: 1;
+}
+.service-list-reverse{
+              order: 2;
+}
+.service ul{
+              list-style: none;
+              padding: 0;
+}
+.service li{
+              font-size: 20px;
+              font-weight: 800;
+              padding: 10px;
+              color: rgb(85, 85, 121);
+}
+@media screen and (max-width: 650px) {
+              .service-row{
+                            display: flex;
+                            flex-direction: column;
+              }
+              .service-image{
+                            order: 1;
+              }
+              .service-image-reverse{
+                            order: 2;
+              }        
+}

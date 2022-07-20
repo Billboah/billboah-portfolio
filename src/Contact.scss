@@ -1,0 +1,75 @@
+#footer-cta {
+	background-color: rgba(147, 145, 145, 0.91);
+	padding: 10px 0 30px;
+              text-align: center;
+}
+
+#footer-cta h2 {
+	color: white;
+}
+
+#footer-cta p {
+	color: #fff;
+	font-family: "Maven pro", sans-serif;
+	font-weight: 500;
+	font-size: 1.2em;
+              margin-top: -30px;
+}
+
+#startButtonDiv {
+	margin-top: 60px;
+}
+
+#startButtonDiv a  {
+	border: 2px solid #fff;
+	border-radius: 45px;
+	color: #fff;
+}
+.footer_button{
+              cursor: pointer;
+              background-color: rgba(147, 145, 145, 0.91);
+              padding: 15px 30px;
+              font-weight: 700;
+              border-radius: 15px;
+              color: white;
+              text-decoration: none;
+}
+
+#startButtonDiv a:hover {
+	background: #fff;
+	color: rgba(147, 145, 145, 0.91);
+	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 14px 1px rgba(0, 0, 0, 0.15);
+}
+#footer-cta .icon{
+	margin-top: 30px;
+}
+
+
+/*** footer starts ***/
+
+#footer {
+	padding: 5em 4em 2em;
+              text-align: center;
+}
+
+#footer #logo {
+	background-color: rgba(147, 145, 145, 0.91);
+	border-radius: 50%;
+	color: #fff;
+	padding: .4em;
+	font-family: "Maven pro", sans-serif;
+	font-size: 1.6em;
+	font-weight: 500;
+	display: inline;
+}
+
+#footer #copyright {
+	margin-top: 1.6em;
+	font-family: "Maven pro", sans-serif;
+	font-weight: 500;
+	color: #7d7d7d;
+}
+
+.footer-cta-title{
+              font-size: 50px;
+}
