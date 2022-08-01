@@ -1,10 +1,11 @@
 @import 'animate.css';
+@import '~loaders.css/src/animations/pacman.scss';
 .app{
   margin: 10% 5%;
   background-color: rgb(222, 222, 231);
   border: 1px inherit solid;
   border-radius: 20px;
-  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  box-shadow: 0 0 20px 0 rgb(160, 160, 160);
   height: 100%;
   min-height: fit-content;
   min-width: fit-content;
@@ -19,5 +20,35 @@
   transform-style: preserve-3d;
   animation: fadeIn 1s forwards;
   animation-delay: 1s;
+}
+.contact_button{
+  width: fit-content;
+  cursor: pointer;
+  background-color:rgb(113, 113, 250);
+  padding: 15px 30px;
+  font-weight: 700;
+  border-radius: 15px;
+  color: white;
+  font-size: 100%;
+  margin: 10px 0;
+}
+.contact_button:hover{
+  background-color: white;
+  color: black;
+}
+
+.contact_button_link{
+  text-decoration: none;
+}
+
+.loader-active{
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: auto;
+  animation: fadeOut 1s 1s;
+  animation-fill-mode: forwards;
 }
 

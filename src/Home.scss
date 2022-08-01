@@ -40,50 +40,74 @@
       animation: fadeIn 1s 1.8s backwards;
 }
 .profile img{height: 650px;}
-.work{
+.home-tools{
               flex: 1;
-              display: flex;
-              flex-direction: column;
-              justify-content: space-between;
-              padding: 70px 60px 35px 0;
-
+              padding-top: 15%;
 }
 
-.work .one{
-      max-width: fit-content;
+.icon_animation{
+      animation-name: spincube;
+      animation-timing-function: ease-in-out ;
+      animation-iteration-count: infinite;
+      animation-duration: 12s;
+      transform-style: preserve-3d;
+      transform-origin: 100px 100px 0;
+      margin-left: calc(50% - 100px);
+
+      div {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border: 1px solid gray;
+            background: rgba(129, 129, 175, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 20px 0 lightblue;
+      }
 }
-.work .two{
-      max-width: fit-content;
+.icon_animation .spin1{
+      transform: translateZ(100px);
 }
-.end{
-      display: flex;
-      justify-content: flex-end;
+.icon_animation .spin2{
+      transform: rotateY(90deg) translateZ(100px);
 }
-.work_img{
-      border: 5px solid white;
-      border-radius: 20px;
-      max-width: fit-content;
-      background-color: white;
-      
+.icon_animation .spin3{
+      transform: rotateX(90deg) rotateY(180deg) translateZ(100px);
 }
-.work img{
-              width: 150px;
-              padding: 0;
-              margin: 0;
-              border-radius: 20px;           
+.icon_animation .spin4{
+      transform: rotateZ(90deg) rotateY(180deg) translateZ(100px);
 }
-.work p{
-      font-size: 10px;
-      font-weight: 800;
-      background-color: white;
-      border-radius: 15px;
-      padding: 10px 35px;
+.icon_animation .spin5{
+      transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+}
+
+@keyframes spincube {
+      from,
+      to{
+            transform: rotateX(0deg) rotateZ(0deg);
+      }
+      16% {
+            transform: rotateX(-90deg) 
+      }
+      33%{
+            transform: rotateX(-90deg) rotateZ(90deg);
+      }
+      50% {
+            transform: rotateX(-180deg) rotateZ(90deg);
+      }
+      66%{
+            transform: rotateX(-270deg) rotateZ(90deg);
+      }
+      83%{
+            transform: rotateX(-90deg) rotateZ(90deg);
+      }
 }
 .icon{
       color: gray;
       padding: 7px ;
-      width: 25px;
-      height: 25px;
+      width: 15px;
+      height: 15px;
 }
 
 .icon:hover{
@@ -108,11 +132,11 @@
                             padding: 0;
               }
 
-              .work{
-                  width: 80%;
-                  padding: 30px 30px 10px 10px;
-    
-    }
+              .home-tools{
+                  position: absolute;
+                  opacity: 0.5; 
+                  top: 50%;   
+             }
             
               .lastIcons{
                   display: block;

@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import './Home.scss';
 import profile from './bill2.png';
-import work from './reactapp.jpg';
-import { FaRegEnvelope } from 'react-icons/fa';
+import { FaCss3, FaGitAlt, FaHtml5, FaJs, FaReact, FaRegEnvelope } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
 import AnimationLetters from './animations';
-import ui from './ui.webp';
-import ThD from './3D.jfif';
+import { Link } from 'react-router-dom';
+import Loader from 'react-loaders';
 
 const Home = () => {
   // eslint-disable-next-line no-unused-vars
@@ -25,27 +24,74 @@ const Home = () => {
   });
 
   return (
-    <div className="container">
-      <div className="home">
-        <div className="description">
-          <div className="description_me">
-            <h3>
-              <span className={`${letterClass}`}>H</span>
-              <span className={`${letterClass} _12`}>i, </span>
-              <span className={`${letterClass} _13`}> I</span>
-              <span className={`${letterClass} _14`}>&lsquo;m</span>
-            </h3>
-            <h1 className="name">
-              <AnimationLetters letterClass={letterClass} strArray={nameArray} idx={15} />
-            </h1>
-            <h1 className="job">
-              <AnimationLetters letterClass={letterClass} strArray={jobArray} idx={22} />
-            </h1>
-            <p>Frontend developer / JavaScript Expert / React developer.</p>
+    <div>
+      <div className="container">
+        <div className="home">
+          <div className="description">
+            <div className="description_me">
+              <h3>
+                <span className={`${letterClass}`}>H</span>
+                <span className={`${letterClass} _12`}>i, </span>
+                <span className={`${letterClass} _13`}> </span>
+                <span className={`${letterClass} _14`}> I</span>
+                <span className={`${letterClass} _15`}>&rsquo;m</span>
+              </h3>
+              <h1 className="name">
+                <AnimationLetters letterClass={letterClass} strArray={nameArray} idx={15} />
+              </h1>
+              <h1 className="job">
+                <AnimationLetters letterClass={letterClass} strArray={jobArray} idx={22} />
+              </h1>
+              <p>Frontend developer / JavaScript Expert / React developer.</p>
+            </div>
+            <div className="firstIcons">
+              <Link className="contact_button_link" to="/contact">
+                <div className="contact_button">LET&#39;S TALK</div>
+              </Link>
+              <a href="mailto:willboahacheampong@gmail.con">
+                <FaRegEnvelope className="icon email" />
+              </a>
+              <a href="https://www.github.com/billboah">
+                <FaGithub className="icon" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/william-yeboah-968090238/"
+                target="_blank"
+                rel="noreferrer">
+                <FaLinkedin className="icon" />
+              </a>
+            </div>
           </div>
-          <div className="firstIcons">
+          <div className="profile">
+            <img src={profile} alt="" />
+          </div>
+
+          <div className="home-tools">
+            <div className="icon_animation">
+              <div className="spin1">
+                <FaCss3 size={100} color="lightblue" />
+              </div>
+              <div className="spin2">
+                <FaHtml5 size={100} color="red" />
+              </div>
+              <div className="spin3">
+                <FaReact size={100} color="lightblue" />
+              </div>
+              <div className="spin4">
+                <FaJs size={100} color="yellow" />
+              </div>
+              <div className="spin5">
+                <FaGitAlt size={100} color="orange" />
+              </div>
+            </div>
+          </div>
+
+          <div className="lastIcons">
+            <Link className="contact_button_link" to="/contact">
+              <div className="contact_button">LET&#39;S TALK</div>
+            </Link>
             <a href="mailto:willboahacheampong@gmail.con">
-              <FaRegEnvelope className="icon email" />
+              <FaRegEnvelope className="icon" />
             </a>
             <a href="https://www.github.com/billboah">
               <FaGithub className="icon" />
@@ -58,52 +104,8 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <div className="profile">
-          <img src={profile} alt="" />
-        </div>
-
-        <div className="work">
-          <div className="start">
-            <div className="one">
-              <div className="work_img">
-                <img src={work} alt="" />
-              </div>
-              <p>React JS Developer</p>
-            </div>
-          </div>
-          <div className="end">
-            <div className="two">
-              <div className="work_img">
-                <img src={ThD} alt="" />
-              </div>
-              <p>3D Designer</p>
-            </div>
-          </div>
-          <div className="start">
-            <div className="two">
-              <div className="work_img">
-                <img src={ui} alt="" />
-              </div>
-              <p>UI/UX Designer</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="lastIcons">
-          <a href="mailto:willboahacheampong@gmail.con">
-            <FaRegEnvelope className="icon email" />
-          </a>
-          <a href="https://www.github.com/billboah">
-            <FaGithub className="icon" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/william-yeboah-968090238/"
-            target="_blank"
-            rel="noreferrer">
-            <FaLinkedin className="icon" />
-          </a>
-        </div>
       </div>
+      <Loader type="pacman" />
     </div>
   );
 };

@@ -99,9 +99,6 @@ const Navbar = () => {
           </div>
         )}
       </div>
-      <a className="nav_button_link" href="mailto:willboahacheampong@gmail.con">
-        <div className="nav_button">LET&#39;S TALK</div>
-      </a>
     </nav>
   );
 };
