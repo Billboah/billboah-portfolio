@@ -3,7 +3,6 @@
 .app{
   margin: 30px 30px;
   padding: 0;
-  border: 1px inherit solid;
   border-radius: 20px;
   height: 92vh;
   min-height: fit-content;
@@ -12,6 +11,7 @@
 @media (prefers-color-scheme: dark){
   .app{
     background-color: rgb(56, 56, 109);
+    border: 1px rgb(56, 56, 109) solid;
     color: white;
     box-shadow: 0 0 20px 0 rgb(116, 115, 115);
   }
@@ -22,6 +22,7 @@
 @media (prefers-color-scheme: light){
   .app{
     background-color: rgb(228, 227, 238);
+    border: 1px rgb(228, 227, 238) solid;
     color: black;
     box-shadow: 0 0 20px 0 rgb(160, 160, 160);    
   }
