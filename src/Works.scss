@@ -1,5 +1,5 @@
 .work1{
-  margin: 5%;
+  padding: 0  30px;
 }
 .work1 h2{
   font-size: 50px;
@@ -11,6 +11,10 @@
 
 .grid-container{
   padding: 50px 0;
+}
+
+.grid-container:last-child{
+  padding: 5px 0;
 }
 
 .works-section{
@@ -28,7 +32,7 @@
   display: none;
   height: 100%;
   text-align: center;
-  background-color: rgba(0, 0, 0,0.2);
+  background-color: rgba(0, 0, 0,0.1);
   color: white;
   border-radius: 10px;
 
@@ -40,10 +44,10 @@
       font-weight: 700;
       width: 100px;
       border-radius: 10px;
-      background-color: rgba(0, 0, 0,0.4);
+      background-color: rgba(0, 0, 0, 0.6);
   }
   a:hover{
-    background-color: rgba(244, 244, 244, 0.2);
+    background-color: rgba(27, 17, 156, 0.8);
   }
 }
 .works-section:hover{

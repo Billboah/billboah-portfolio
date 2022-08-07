@@ -20,7 +20,7 @@ const Service = () => {
   });
 
   return (
-    <div>
+    <div className="body">
       <div className="container">
         <div className="service">
           <div className="row column">
@@ -54,7 +54,7 @@ const Service = () => {
           <div className="row service-app">
             <div className="service-row">
               <div className=" service-image-reverse">
-                <img src={Service2} alt="" className="service_img" />
+                <img src={Service2} alt="" className="service_img big" />
               </div>
               <div className="service-list-reverse">
                 <ul>
@@ -95,8 +95,8 @@ const Service = () => {
               </div>
             </div>
           </div>
-          <Link className="contact_button_link" to="/contact">
-            <div className="contact_button">LET&#39;S TALK</div>
+          <Link className="contact_button_link " to="/contact">
+            <div className="contact_button service-contact">LET&#39;S TALK</div>
           </Link>
         </div>
       </div>

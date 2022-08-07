@@ -1,5 +1,5 @@
 .service{
-              padding: 20px;
+              height: 100%;              
 }
 .service h2{
               font-size: 2.5rem;
@@ -40,8 +40,19 @@
               font-size: 20px;
               font-weight: 800;
               padding: 10px;
-              color: rgb(85, 85, 121);
 }
+.service-contact {
+              margin-left: 20px;
+}
+@media (prefers-color-scheme: dark){
+              .service li{color: rgb(219, 227, 255);
+              }
+             }
+@media (prefers-color-scheme: light){
+              .service li{color: rgb(85, 85, 121);
+              }
+             }
+
 @media screen and (max-width: 650px) {
               .service-row{
                             display: flex;
@@ -52,5 +63,8 @@
               }
               .service-image-reverse{
                             order: 2;
-              }        
+              }   
+              .service-app .big{
+                            width: 300px;
+              }     
 }

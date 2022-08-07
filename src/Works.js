@@ -22,7 +22,7 @@ const Works = () => {
   });
 
   return (
-    <div>
+    <div className="body">
       <div className="container">
         <div className="work1">
           <h2 className="text-center">
@@ -247,7 +247,6 @@ const Works = () => {
                 <li>JS</li>
               </ul>
             </div>
-
             <Link className="contact_button_link" to="/contact">
               <div className="contact_button">LET&#39;S TALK</div>
             </Link>

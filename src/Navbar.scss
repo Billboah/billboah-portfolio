@@ -3,8 +3,8 @@
               display: flex;
               justify-content: space-between;
               align-items: center;   
-              margin: 20px 30px;
-              padding: 30px 50px;
+              margin: 10px 15px;
+              padding: 15px 20px;
               position: relative;
 }
 .nav_logo{
@@ -25,17 +25,26 @@
 .listA{
               text-decoration: none;
               font-size: 130%;
-              color: gray;
               font-weight: 600;
 }
+@media (prefers-color-scheme: dark){
+              .listA{
+                            color: rgb(226, 226, 226);
+              }
+            }
+@media (prefers-color-scheme: light){
+              .listA{
+                            color: gray
+              }
+            }
 .listA:hover{
               font-size: 130%;
-              color: rgb(46, 46, 245);
+              color: blue;
               border-bottom: 4px solid rgb(46, 46, 245);
 }
 .listA:focus, .listA:active{
               font-size: 130%;
-              color: rgb(46, 46, 245);
+              color: blue;
               border-bottom: 4px solid rgb(46, 46, 245);
 }
 
@@ -64,12 +73,19 @@
 .nav_srcLink {
               text-align: right;
               width:  100%;
-              background-color: rgb(3, 3, 134);
               padding: 20px;
               margin: 2px 0;             
-}   
-
-    
+}  
+@media (prefers-color-scheme: dark){
+              .nav_srcLink{
+                             background-color: rgb(144, 144, 192);
+              }
+            } 
+@media (prefers-color-scheme: light){
+              .nav_srcLink{
+                            background-color: rgb(201, 201, 244);
+              }
+            } 
 
 .nav_srcList{
               list-style: none;
@@ -91,9 +107,7 @@
               color: rgb(44, 44, 244);
 }
 @media screen and (max-width: 650px) {
-              .nav{
-                            padding: 30px 1%;
-              }  
+               
               
               .nav_small{
                             display: block;

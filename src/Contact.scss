@@ -26,38 +26,42 @@
 
 #startButtonDiv {
 	margin-top: 60px;
-	width: 500px;
+	width: 100%;
+	max-width: 800px;
+	min-width: 300px;
 }
 
 #footer-cta .icon{
 	margin-top: 30px;
 }
 
+.contact-form form{
+	display: flex;
+	justify-content: center;
+}
 .contact-form ul{
 	list-style: none;
-	width: 95%;
-	max-width: 600px;
+	width: 90%;
 	margin: 0;
 	padding: 0;
 }
 .contact-form li{
 	width: 100%;
-	margin: 10px;
+	margin: 10px 0;
+	opacity: 0;
 	animation: fadeInUp 2s 2s;
 	animation-fill-mode: forwards;
 }
-.contact-form .flex{
+.contact-form li:first-child{
 	display: flex;
-	width: 102.5%;
-	margin: 10px;
 }
 .contact-form li .half{
 	margin-right: 10px;
 }
 .contact-form input[type='text'], 
 .contact-form input[type='email'] {
-	width: 100%;
-	background-color: rgb(116, 116, 181);
+	width: 98%;
+	background-color: rgb(188, 188, 231);
 	border: none;
 	font-size: 18px;
 	padding: 15px 7px;
@@ -66,12 +70,12 @@ input:focus{
 	outline: none;
 }
 .contact-form textarea{
-	width: 100%;
-	background-color: rgb(116, 116, 181);
+	width: 98%;
+	background-color: rgb(188, 188, 231);
 	border: none;
 	font-size: 18px;
 	padding: 15px 7px;
-	min-height: 100px;
+	height: 200px;
 }
 textarea:focus{
 	outline: none;
@@ -88,12 +92,12 @@ input::placeholder{
 	font-size: 20px;
 	border-radius: 5px;
 	border: 1px solid rgb(203, 246, 246);
-	background-color: rgb(116, 116, 181);
+	background-color: rgb(188, 188, 231);
 	padding-right: 15px;
 	padding-left: 15px;
 }
 .contact-form input[type='submit']:hover{
-	background-color: rgb(219, 219, 227);
+	background-color: white;
 }
 
 
@@ -120,9 +124,19 @@ input::placeholder{
 	margin-top: 1.6em;
 	font-family: "Maven pro", sans-serif;
 	font-weight: 500;
-	color: #7d7d7d;
 }
 
 .footer-cta-title{
               font-size: 50px;
+}
+
+@media screen and (max-width: 650px) {
+	.contact-form li:first-child{	
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	.contact-form li:first-child input:first-child {
+		margin-bottom: 10px;	
+	}
 }

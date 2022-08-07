@@ -24,7 +24,7 @@ const Home = () => {
   });
 
   return (
-    <div>
+    <div className="body">
       <div className="container">
         <div className="home">
           <div className="description">
@@ -44,22 +44,24 @@ const Home = () => {
               </h1>
               <p>Frontend developer / JavaScript Expert / React developer.</p>
             </div>
-            <div className="firstIcons">
+            <div className="firstIcons home-button">
               <Link className="contact_button_link" to="/contact">
                 <div className="contact_button">LET&#39;S TALK</div>
               </Link>
-              <a href="mailto:willboahacheampong@gmail.con">
-                <FaRegEnvelope className="icon email" />
-              </a>
-              <a href="https://www.github.com/billboah">
-                <FaGithub className="icon" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/william-yeboah-968090238/"
-                target="_blank"
-                rel="noreferrer">
-                <FaLinkedin className="icon" />
-              </a>
+              <div>
+                <a href="mailto:willboahacheampong@gmail.con">
+                  <FaRegEnvelope className="icon email" />
+                </a>
+                <a href="https://www.github.com/billboah">
+                  <FaGithub className="icon" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/william-yeboah-968090238/"
+                  target="_blank"
+                  rel="noreferrer">
+                  <FaLinkedin className="icon" />
+                </a>
+              </div>
             </div>
           </div>
           <div className="profile">
@@ -86,22 +88,24 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="lastIcons">
+          <div className="lastIcons home-button">
             <Link className="contact_button_link" to="/contact">
               <div className="contact_button">LET&#39;S TALK</div>
             </Link>
-            <a href="mailto:willboahacheampong@gmail.con">
-              <FaRegEnvelope className="icon" />
-            </a>
-            <a href="https://www.github.com/billboah">
-              <FaGithub className="icon" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/william-yeboah-968090238/"
-              target="_blank"
-              rel="noreferrer">
-              <FaLinkedin className="icon" />
-            </a>
+            <div>
+              <a href="mailto:willboahacheampong@gmail.con">
+                <FaRegEnvelope className="icon" />
+              </a>
+              <a href="https://www.github.com/billboah">
+                <FaGithub className="icon" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/william-yeboah-968090238/"
+                target="_blank"
+                rel="noreferrer">
+                <FaLinkedin className="icon" />
+              </a>
+            </div>
           </div>
         </div>
       </div>

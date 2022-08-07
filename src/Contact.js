@@ -32,7 +32,7 @@ const Services = () => {
   });
 
   return (
-    <div>
+    <div className="body">
       <div className="container">
         <section id="footer-cta">
           <h1>
@@ -45,30 +45,26 @@ const Services = () => {
             <span className={`${letterClass} _17`}>t</span>
           </h1>
           <h2 className="footer-cta-title">Wanna work with me?</h2>
-          <div>
-            <div>
-              <p>I&apos;m currently available for work.</p>
-            </div>
-            <div id="startButtonDiv">
-              <div className="contact-form">
-                <form ref={form} onSubmit={sendEmail}>
-                  <ul>
-                    <li className="flex">
-                      <input type="text" className="half" name="name" placeholder="Name" required />
-                      <input type="email" name="email" placeholder="Email" required />
-                    </li>
-                    <li>
-                      <input type="text" name="subject" placeholder="Subject" required />
-                    </li>
-                    <li>
-                      <textarea name="message" placeholder="Message" required />
-                    </li>
-                    <li className="contact-button">
-                      <input type="submit" value="Send" />
-                    </li>
-                  </ul>
-                </form>
-              </div>
+          <p>I&apos;m currently available for work.</p>
+          <div id="startButtonDiv">
+            <div className="contact-form">
+              <form ref={form} onSubmit={sendEmail}>
+                <ul>
+                  <li>
+                    <input type="text" className="half" name="name" placeholder="Name" required />
+                    <input type="email" name="email" placeholder="Email" required />
+                  </li>
+                  <li>
+                    <input type="text" name="subject" placeholder="Subject" required />
+                  </li>
+                  <li>
+                    <textarea name="message" placeholder="Message" required />
+                  </li>
+                  <li className="contact-button">
+                    <input type="submit" value="Send" />
+                  </li>
+                </ul>
+              </form>
             </div>
           </div>
           <div>
