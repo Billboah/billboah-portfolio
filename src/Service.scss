@@ -44,14 +44,12 @@
 .service-contact {
               margin-left: 20px;
 }
-@media (prefers-color-scheme: dark){
-              .service li{color: rgb(219, 227, 255);
+.dark-theme .service li{color: rgb(219, 227, 255);
               }
-             }
-@media (prefers-color-scheme: light){
-              .service li{color: rgb(85, 85, 121);
+             
+.light-theme  .service li{color: rgb(85, 85, 121);
               }
-             }
+             
 
 @media screen and (max-width: 650px) {
               .service-row{

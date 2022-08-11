@@ -1,19 +1,32 @@
 import './Navbar.scss';
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaBars, FaCode, FaStar, FaTimes } from 'react-icons/fa';
+import { FaBars, FaCode, FaMoon, FaStar, FaSun, FaTimes } from 'react-icons/fa';
+import { ThemeContext } from './Theme';
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const { toggleTheme } = useContext(ThemeContext);
 
   return (
-    <nav className="nav">
+    <nav className={`nav `}>
       <div className="nav_logo">
         <FaCode className="code" />
         <div className="logo_name">bill</div>
         <FaStar className="star" />
       </div>
       <ul className="nav_list">
+        <li className="nav_link">
+          <div
+            role="button"
+            className="theme-button"
+            onClick={toggleTheme}
+            onKeyPress={toggleTheme}
+            tabIndex="0">
+            <FaSun className="sun" />
+            <FaMoon className="moon" />
+          </div>
+        </li>
         <li className="nav_link">
           <Link className="listA" to="/">
             Home
@@ -38,13 +51,24 @@ const Navbar = () => {
 
       <div className="nav_small">
         {toggleMenu === false && (
-          <FaBars
-            className="nav_sro"
-            size={20}
-            onClick={() => {
-              setToggleMenu(true);
-            }}
-          />
+          <div className="small">
+            <div
+              role="button"
+              className="theme-button2"
+              onClick={toggleTheme}
+              onKeyPress={toggleTheme}
+              tabIndex="0">
+              <FaSun className="sun" />
+              <FaMoon className="moon" />
+            </div>
+            <FaBars
+              className="nav_sro"
+              size={20}
+              onClick={() => {
+                setToggleMenu(true);
+              }}
+            />
+          </div>
         )}
         {toggleMenu === true && (
           <div className="nav_src">

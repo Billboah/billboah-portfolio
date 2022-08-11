@@ -22,27 +22,20 @@
               font-weight: 1000;
              margin-top: -10px;
              margin-bottom: -10px;
+             text-shadow: 4px 4px rgb(143, 143, 214);
 }
-@media (prefers-color-scheme: dark){
-      .description .name{
-           text-shadow: 4px 4px rgb(59, 59, 59);
-      }
+
+.dark-theme .home{
       .icon{
             color: rgb(255, 255, 255);
       }
     } 
-@media (prefers-color-scheme: light){
-      .description .name{
-           text-shadow: 4px 4px gray;
-      }
+.light-theme .home{
       .icon{
             color: gray;
-      }
+      }           
     } 
 
-.description .name::first-letter{
-      font-size: 80px;   
-}
 .description .job{
       font-weight: bolder;
      margin-top: -10px;
@@ -83,19 +76,10 @@
             justify-content: center;
             align-items: center;
             box-shadow: 0 0 20px 0 lightblue;
+            border: 1px solid gray;
+            background: rgba(99, 99, 166, 0.7);
       }
-      @media (prefers-color-scheme: dark){
-           div{
-            border: 1px solid rgb(193, 193, 193);
-            background: rgba(16, 16, 255, 0.7);
-           }
-          }
-      @media (prefers-color-scheme: light){
-            div{
-                  border: 1px solid gray;
-                  background: rgba(99, 99, 166, 0.7);
-            }
-           }     
+
 }
 .icon_animation .spin1{
       transform: translateZ(100px);

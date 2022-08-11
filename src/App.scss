@@ -1,5 +1,13 @@
 @import 'animate.css';
 @import '~loaders.css/src/animations/pacman.scss';
+
+.app-body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
 .app{
   margin: 30px 30px;
   padding: 0;
@@ -8,27 +16,29 @@
   min-height: fit-content;
   min-width: fit-content;
 }
-@media (prefers-color-scheme: dark){
+.dark-theme{
+  background-color: rgb(37, 37, 40);
   .app{
-    background-color: rgb(28, 28, 56);
-    border: 1px  rgb(28, 28, 56) solid;
+    background-color: rgb(52, 52, 55);
+    border: 1px  rgb(52, 52, 55) solid;
     color: white;
-    box-shadow: 0 0 20px 0 rgb(75, 75, 75);
+    box-shadow: 0 0 20px 0 rgb(21, 21, 21);
   }
   .contact_button{
     background-color: rgb(45, 45, 255);
   }
 }
-@media (prefers-color-scheme: light){
+.light-theme{
+  background-color: rgb(202, 202, 212);
   .app{
     background-color: rgb(228, 227, 238);
     border: 1px rgb(228, 227, 238) solid;
     color: black;
-    box-shadow: 0 0 20px 0 rgb(160, 160, 160);    
-  }
+    box-shadow: 0 0 20px 0 rgb(160, 160, 160);   
+  }   
   .contact_button{
     background-color: rgb(113, 113, 250);
-  }
+  }  
 }
 
 .body{
