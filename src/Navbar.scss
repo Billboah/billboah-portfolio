@@ -42,6 +42,9 @@
               .listA{
                             color: rgb(226, 226, 226);
               }
+              .nav_srcLink{
+                background-color: rgb(144, 144, 192);
+ }
               .sun{
                 display: block;
                 color: rgb(226, 226, 226);
@@ -54,6 +57,9 @@
               .listA{
                             color: gray
               }
+              .nav_srcLink{
+                background-color: rgb(201, 201, 244);
+  }
               .sun{
                 display: none;
               }
@@ -106,18 +112,7 @@
 } 
 .small{
   display: flex;
-} 
-@media (prefers-color-scheme: dark){
-              .nav_srcLink{
-                             background-color: rgb(144, 144, 192);
-              }
-            } 
-@media (prefers-color-scheme: light){
-              .nav_srcLink{
-                            background-color: rgb(201, 201, 244);
-              }
-            } 
-
+}       
 .nav_srcList{
               list-style: none;
 }

@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 import Loader from 'react-loaders';
 import { Link } from 'react-router-dom';
 import './Service.scss';
-import Service1 from './service1.svg';
-import Service2 from './service2.svg';
-import Service3 from './service3.svg';
-import Service4 from './service4.svg';
+import Service1 from './assets/service/service1.svg';
+import Service2 from './assets/service/service2.svg';
+import Service3 from './assets/service/service3.svg';
+import Service4 from './assets/service/service4.svg';
 
 const Service = () => {
   const [letterClass, setletterClass] = useState('text-animate');

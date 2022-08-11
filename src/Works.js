@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import './Works.scss';
-import amazon from './amazon.jpeg';
-import beatbox from './beatbox.png';
-import clock from './clock.png';
-import myclock from './myclock.png';
-import uber from './uber.png';
-import weather from './weather.png';
+import amazon from './assets/work/amazon.jpeg';
+import beatbox from './assets/work/beatbox.png';
+import clock from './assets/work/clock.png';
+import myclock from './assets/work/myclock.png';
+import uber from './assets/work/uber.png';
+import weather from './assets/work/weather.png';
 import { Link } from 'react-router-dom';
 import Loader from 'react-loaders';
 

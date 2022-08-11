@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Home.scss';
-import profile from './bill2.png';
+import profile from './assets/profile.png';
 import { FaCss3, FaGitAlt, FaHtml5, FaJs, FaReact, FaRegEnvelope } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
@@ -33,8 +33,8 @@ const Home = () => {
                 <span className={`${letterClass}`}>H</span>
                 <span className={`${letterClass} _12`}>i, </span>
                 <span className={`${letterClass} _13`}> </span>
-                <span className={`${letterClass} _14`}> I</span>
-                <span className={`${letterClass} _15`}>&rsquo;m</span>
+                <span className={`${letterClass} _14`}> I&rsquo;</span>
+                <span className={`${letterClass} _15`}>m</span>
               </h3>
               <h1 className="name">
                 <AnimationLetters letterClass={letterClass} strArray={nameArray} idx={15} />

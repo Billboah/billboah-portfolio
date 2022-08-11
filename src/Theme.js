@@ -5,8 +5,8 @@ const ThemeContext = createContext();
 const getTheme = () => {
   const theme = localStorage.getItem('theme');
   if (!theme) {
-    localStorage.setItem('theme', 'dark-theme');
-    return theme;
+    localStorage.setItem('theme', 'light-theme');
+    return 'light-theme';
   } else {
     return theme;
   }
@@ -28,7 +28,6 @@ const ThemeProvider = ({ children }) => {
     const refreshTheme = () => {
       localStorage.setItem('theme', theme);
     };
-
     refreshTheme();
   }, [theme]);
 
