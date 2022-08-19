@@ -5,7 +5,7 @@ import Navbar from './Navbar';
 import Contact from './Contact';
 import Works from './Works';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Service from './Service';
+import About from './About';
 import { ThemeContext } from './Theme';
 
 function App() {
@@ -20,8 +20,8 @@ function App() {
             <Route path="/works">
               <Works />
             </Route>
-            <Route path="/service">
-              <Service />
+            <Route path="/about">
+              <About />
             </Route>
             <Route path="/contact">
               <Contact />

@@ -44,8 +44,6 @@ const Services = () => {
             <span className={`${letterClass} _16`}>c</span>
             <span className={`${letterClass} _17`}>t</span>
           </h1>
-          <h2 className="footer-cta-title">Wanna work with me?</h2>
-          <p>I&apos;m currently available for work.</p>
           <div id="startButtonDiv">
             <div className="contact-form">
               <form ref={form} onSubmit={sendEmail}>

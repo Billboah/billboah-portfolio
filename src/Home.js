@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import './Home.scss';
-import profile from './assets/profile.png';
 import { FaCss3, FaGitAlt, FaHtml5, FaJs, FaReact, FaRegEnvelope } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
 import AnimationLetters from './animations';
 import { Link } from 'react-router-dom';
 import Loader from 'react-loaders';
+import tailwind from './assets/tailwind.png';
 
 const Home = () => {
   // eslint-disable-next-line no-unused-vars
@@ -64,9 +64,6 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="profile">
-            <img src={profile} alt="" />
-          </div>
 
           <div className="home-tools">
             <div className="icon_animation">
@@ -85,10 +82,13 @@ const Home = () => {
               <div className="spin5">
                 <FaGitAlt size={100} color="orange" />
               </div>
+              <div className="spin6">
+                <img src={tailwind} alt="" />
+              </div>
             </div>
           </div>
 
-          <div className="lastIcons home-button">
+          <div className="lastIcons home-buttons2">
             <Link className="contact_button_link" to="/contact">
               <div className="contact_button">LET&#39;S TALK</div>
             </Link>

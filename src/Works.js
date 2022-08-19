@@ -33,7 +33,7 @@ const Works = () => {
             <span className={`${letterClass} _15`}>s</span>
           </h2>
 
-          <div className="grid-container">
+          <div className="work-container">
             <div className="works">
               <a href="https://uber-next-clone-app.vercel.app" target="_blank" rel="noreferrer">
                 <section className="works-section " style={{ backgroundImage: `url(${uber})` }}>
@@ -42,13 +42,13 @@ const Works = () => {
                       href="https://uber-next-clone-app.vercel.app"
                       target="_blank"
                       rel="noreferrer">
-                      Site
+                      Website
                     </a>
                     <a
                       href="https://www.github.com/billboah/uber-next-clone-app"
                       target="_blank"
                       rel="noreferrer">
-                      Source Code
+                      Code
                     </a>
                   </div>
                   <article>
@@ -80,13 +80,13 @@ const Works = () => {
                       href="https://weather-react-app-dusky.vercel.app"
                       target="_blank"
                       rel="noreferrer">
-                      Site
+                      Website
                     </a>
                     <a
                       href="https://www.github.com/billboah/weather-react-app"
                       target="_blank"
                       rel="noreferrer">
-                      Source Code
+                      Code
                     </a>
                   </div>
                   <article>
@@ -118,13 +118,13 @@ const Works = () => {
                       href="https://amazon-clone-rosy-two.vercel.app"
                       target="_blank"
                       rel="noreferrer">
-                      Site
+                      Website
                     </a>
                     <a
                       href="https://www.github.com/billboah/amazon-clone"
                       target="_blank"
                       rel="noreferrer">
-                      Source Code
+                      Code
                     </a>
                   </div>
                   <article>
@@ -152,13 +152,13 @@ const Works = () => {
                 <section className="works-section " style={{ backgroundImage: `url(${clock})` }}>
                   <div className="code-link">
                     <a href="https://clock-react-theta.vercel.app" target="_blank" rel="noreferrer">
-                      Site
+                      Website
                     </a>
                     <a
                       href="https://www.github.com/billboah/clock-react"
                       target="_blank"
                       rel="noreferrer">
-                      Source Code
+                      Code
                     </a>
                   </div>
                   <article>
@@ -186,13 +186,13 @@ const Works = () => {
                 <section className="works-section " style={{ backgroundImage: `url(${beatbox})` }}>
                   <div className="code-link">
                     <a href="https://beatbox-app-orpin.vercel.app" target="_blank" rel="noreferrer">
-                      Site
+                      Website
                     </a>
                     <a
                       href="https://www.github.com/billboah/beatbox-app"
                       target="_blank"
                       rel="noreferrer">
-                      Source Code
+                      Code
                     </a>
                   </div>
                   <article>
@@ -219,13 +219,13 @@ const Works = () => {
                 <section className="works-section" style={{ backgroundImage: `url(${myclock})` }}>
                   <div className="code-link">
                     <a href="https://myclock-app.vercel.app" target="_blank" rel="noreferrer">
-                      Site
+                      Website
                     </a>
                     <a
                       href="https://www.github.com/billboah/myclock"
                       target="_blank"
                       rel="noreferrer">
-                      Source Code
+                      Code
                     </a>
                   </div>
                   <article>
@@ -247,10 +247,10 @@ const Works = () => {
                 <li>JS</li>
               </ul>
             </div>
-            <Link className="contact_button_link" to="/contact">
-              <div className="contact_button">LET&#39;S TALK</div>
-            </Link>
           </div>
+          <Link className="contact_button_link" to="/contact">
+            <div className="contact_button">LET&#39;S TALK</div>
+          </Link>
         </div>
       </div>
       <Loader type="pacman" />

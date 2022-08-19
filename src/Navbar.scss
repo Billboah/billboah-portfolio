@@ -1,5 +1,5 @@
 .nav{
-              height: 5%;
+              height: 10px;
               display: flex;
               justify-content: space-between;
               align-items: center;   
@@ -12,7 +12,7 @@
                 cursor: pointer;
               }
               .theme-button2{
-                margin-top: 4px;
+                margin-top: 2px;
                 cursor: pointer;
               }
 
@@ -27,7 +27,9 @@
 }
 .nav_list{
               display: flex;
-              list-style: none;   
+              list-style: none;  
+              padding-left: 0;
+              padding-right: 0; 
 }
 .nav_link{
               margin: 0 20px;
@@ -38,44 +40,8 @@
               font-size: 130%;
               font-weight: 600;
 }
-.dark-theme .nav{
-              .listA{
-                            color: rgb(226, 226, 226);
-              }
-              .nav_srcLink{
-                background-color: rgb(144, 144, 192);
- }
-              .sun{
-                display: block;
-                color: rgb(226, 226, 226);
-              }
-              .moon{
-                display: none;
-              }
-            }
-.light-theme .nav{
-              .listA{
-                            color: gray
-              }
-              .nav_srcLink{
-                background-color: rgb(201, 201, 244);
-  }
-              .sun{
-                display: none;
-              }
-              .moon{
-                display: block;
-                color: gray
-              }
-            }
-.listA:hover{
+.listA:hover, .listA:focus, .listA:active{
               font-size: 130%;
-              color: blue;
-              border-bottom: 4px solid rgb(46, 46, 245);
-}
-.listA:focus, .listA:active{
-              font-size: 130%;
-              color: blue;
               border-bottom: 4px solid rgb(46, 46, 245);
 }
 
@@ -132,7 +98,54 @@
 .logo_name{
               color: rgb(44, 44, 244);
 }
-@media screen and (max-width: 650px) {              
+
+.dark-theme .nav{
+  .listA{
+                color: rgb(226, 226, 226);
+  }
+  .listA:hover, .listA:active, .listA:focus{
+    color: blue;
+}
+  .nav_srcLink{
+    background-color: rgb(144, 144, 192);
+}
+  .sun{
+    display: block;
+    color: rgb(226, 226, 226);
+  }
+  .moon{
+    display: none;
+  }
+}
+.light-theme .nav{
+  .listA{
+                color: gray
+  }
+  .listA:hover, .listA:active, .listA:focus{
+    font-size: 130%;
+    color: blue;
+    border-bottom: 4px solid rgb(46, 46, 245);
+}
+
+  .nav_srcLink{
+    background-color: rgb(201, 201, 244);
+}
+  .sun{
+    display: none;
+  }
+  .moon{
+    display: block;
+    color: gray
+  }
+}
+
+@media screen and (max-width: 670px) {   
+  .nav{
+    height: 5px;
+  }
+  .nav_logo{
+    font-size: 10px;
+}           
               .nav_small{
                             display: block;
               }
@@ -146,4 +159,14 @@
                             border-radius: 15px;
                             font-size: 80%;
               }
+              .listA{
+                font-size: 100%;
+  }
+  .sun{
+    font-size: small;
+  }
+  .moon{
+    font-size: small;
+  }
+
 }

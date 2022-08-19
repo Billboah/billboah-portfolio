@@ -3,29 +3,18 @@
 	flex-direction: column;
 	align-items: center;
 	background-color: rgba(147, 145, 145, 0.91);
-	padding: 10px 0 30px;
+	padding: 5px;
+	margin: 0;
               text-align: center;
 	color: white;
 }
 #footer-cta h1{
 	font-weight: 1000;
-	font-size: 3em;
+	font-size: 50px;
 }
 
-#footer-cta h2 {
-	color: white;
-}
-
-#footer-cta p {
-	color: #fff;
-	font-family: "Maven pro", sans-serif;
-	font-weight: 500;
-	font-size: 1.2em;
-              margin-top: -30px;
-}
 
 #startButtonDiv {
-	margin-top: 60px;
 	width: 100%;
 	max-width: 800px;
 	min-width: 300px;
@@ -65,7 +54,7 @@
 	background-color: rgb(188, 188, 231);
 	border: none;
 	font-size: 18px;
-	padding: 15px 7px;
+	padding: 10px 7px;
 }
 input:focus{
 	outline: none;
@@ -75,8 +64,8 @@ input:focus{
 	background-color: rgb(188, 188, 231);
 	border: none;
 	font-size: 18px;
-	padding: 15px 7px;
-	height: 200px;
+	padding: 10px 7px;
+	height: 120px;
 }
 textarea:focus{
 	outline: none;
@@ -103,10 +92,10 @@ input::placeholder{
 
 
 
-/*** footer starts ***/
 
 #footer {
-	padding: 5em 4em 2em;
+	padding-top: 40px;
+	padding-bottom: 20px;
               text-align: center;
 }
 
@@ -131,7 +120,11 @@ input::placeholder{
               font-size: 50px;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 670px) {
+	#footer-cta h1{
+		font-weight: 800;
+		font-size: 30px;
+	}
 	.contact-form li:first-child{	
 		display: flex;
 		flex-direction: column;
@@ -140,4 +133,36 @@ input::placeholder{
 	.contact-form li:first-child input:first-child {
 		margin-bottom: 10px;	
 	}
+	.contact-form input[type='text'], 
+              .contact-form input[type='email'] {
+	font-size: 15px;
+	padding: 10px 7px;
+              }
+              .contact-form textarea{
+	font-size: 15px;
+	padding: 10px 7px;
+	height: 100px;
+              }
+              .contact-form input[type='submit']{
+	cursor: pointer;
+	font-size: 18px;
+	padding-right: 15px;
+	padding-left: 15px;
+             }
+
+             #footer {
+	padding-top: 30px;
+              text-align: center;
+              }
+             #footer #logo {
+	font-size: 1.3em;
+	}
+	#footer #copyright {
+		margin-top: 1.3em;
+		font-weight: 300;
+		font-size: 15px;
+	}
+             .footer-cta-title{
+              font-size: 35px;
+              }
 }

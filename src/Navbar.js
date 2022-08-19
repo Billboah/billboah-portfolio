@@ -9,7 +9,7 @@ const Navbar = () => {
   const { toggleTheme } = useContext(ThemeContext);
 
   return (
-    <nav className={`nav `}>
+    <nav className="nav ">
       <div className="nav_logo">
         <FaCode className="code" />
         <div className="logo_name">bill</div>
@@ -38,8 +38,8 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="nav_link">
-          <Link className="listA" to="/service">
-            Service
+          <Link className="listA" to="/about">
+            About
           </Link>
         </li>
         <li className="nav_link">
@@ -63,7 +63,7 @@ const Navbar = () => {
             </div>
             <FaBars
               className="nav_sro"
-              size={20}
+              size={15}
               onClick={() => {
                 setToggleMenu(true);
               }}
@@ -73,7 +73,7 @@ const Navbar = () => {
         {toggleMenu === true && (
           <div className="nav_src">
             <FaTimes
-              size={20}
+              size={15}
               onClick={() => {
                 setToggleMenu(false);
               }}
@@ -105,8 +105,8 @@ const Navbar = () => {
                   onClick={() => {
                     setToggleMenu(false);
                   }}
-                  to="/service">
-                  Service
+                  to="/about">
+                  About
                 </Link>
               </li>
               <li className="nav_srcLink">

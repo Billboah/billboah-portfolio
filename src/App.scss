@@ -42,7 +42,7 @@
 }
 
 .body{
-  height: 80vh;
+  height: 83vh;
   overflow-y: scroll;
 }
 
@@ -56,6 +56,11 @@
   animation: fadeIn 1s forwards;
   animation-delay: 1s;
 }
+.contact_button_link{
+  text-decoration: none;
+  width: fit-content;
+}
+
 .contact_button{
   width: fit-content;
   cursor: pointer;
@@ -63,7 +68,6 @@
   font-weight: 700;
   border-radius: 15px;
   color: white;
-  font-size: 100%;
   margin: 10px 0;
 }
 .contact_button:hover{
@@ -71,9 +75,6 @@
   color: black;
 }
 
-.contact_button_link{
-  text-decoration: none;
-}
 
 .loader-active{
   display: block;
@@ -85,4 +86,26 @@
   animation: fadeOut 1s 1s;
   animation-fill-mode: forwards;
 }
-
+@media (max-width: 670px){
+  .contact_button{
+    font-size: 10px;
+  }
+  .app{
+    margin: 15px 15px;
+    height: 95vh;
+  }
+  .body{
+    height: 86vh;
+  }
+}
+@media (max-height: 550px){
+  .app{
+    height: 90vh;
+  }
+  .body{
+    height: 74vh;
+  }
+  .contact_button{
+    font-size: 10px;
+  }
+}
