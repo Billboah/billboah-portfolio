@@ -64,11 +64,10 @@ const Works = () => {
               </a>
               <h4>Technologies used include:</h4>
               <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>SVG</li>
                 <li>Next JS</li>
-                <li>Tailwind CSS</li>
+                <li>Tailwind styled component</li>
+                <li>Firbase</li>
+                <li>Mapbox api</li>
               </ul>
             </div>
 
@@ -102,11 +101,9 @@ const Works = () => {
               </a>
               <h4>Technologies used include:</h4>
               <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>SVG</li>
                 <li>React JS</li>
                 <li>Tailwind CSS</li>
+                <li>Openweathermap api</li>
               </ul>
             </div>
 
@@ -140,10 +137,9 @@ const Works = () => {
               </a>
               <h4>Technologies used include:</h4>
               <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>SVG</li>
                 <li>React JS</li>
+                <li>CSS</li>
+                <li>Firbase</li>
               </ul>
             </div>
 
@@ -174,10 +170,10 @@ const Works = () => {
               </a>
               <h4>Technologies used include:</h4>
               <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>SVG</li>
                 <li>React JS</li>
+                <li>CSS</li>
+                <li>IP Geolocation api</li>
+                <li>WorldTime api</li>
               </ul>
             </div>
 
@@ -243,7 +239,6 @@ const Works = () => {
               <ul>
                 <li>HTML</li>
                 <li>CSS</li>
-                <li>SVG</li>
                 <li>JS</li>
               </ul>
             </div>
