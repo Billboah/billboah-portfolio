@@ -206,7 +206,8 @@ const Works = () => {
               <ul>
                 <li>HTML</li>
                 <li>CSS</li>
-                <li>JS</li>
+                <li>IP Geolocation api</li>
+                <li>WorldTime api</li>
               </ul>
             </div>
 
