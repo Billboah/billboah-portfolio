@@ -1,11 +1,15 @@
 .nav{
               height: 10px;
               display: flex;
+              background-color: inherit;
               justify-content: space-between;
               align-items: center;   
               margin: 10px 15px;
               padding: 15px 20px;
               position: relative;
+              position: sticky;
+              top: 0;
+              z-index: 100;
 
               .theme-button{
                 margin-top: 8px;

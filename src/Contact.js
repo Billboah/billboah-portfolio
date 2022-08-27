@@ -34,61 +34,63 @@ const Services = () => {
   return (
     <div className="body">
       <div className="container">
-        <section id="footer-cta">
-          <h1>
-            <span className={`${letterClass}`}>C</span>
-            <span className={`${letterClass} _12`}>o</span>
-            <span className={`${letterClass} _13`}> n</span>
-            <span className={`${letterClass} _14`}>t</span>
-            <span className={`${letterClass} _15`}>a</span>
-            <span className={`${letterClass} _16`}>c</span>
-            <span className={`${letterClass} _17`}>t</span>
-          </h1>
-          <div id="startButtonDiv">
-            <div className="contact-form">
-              <form ref={form} onSubmit={sendEmail}>
-                <ul>
-                  <li>
-                    <input type="text" className="half" name="name" placeholder="Name" required />
-                    <input type="email" name="email" placeholder="Email" required />
-                  </li>
-                  <li>
-                    <input type="text" name="subject" placeholder="Subject" required />
-                  </li>
-                  <li>
-                    <textarea name="message" placeholder="Message" required />
-                  </li>
-                  <li className="contact-button">
-                    <input type="submit" value="Send" />
-                  </li>
-                </ul>
-              </form>
+        <div className="contact">
+          <section id="footer-cta">
+            <h1>
+              <span className={`${letterClass}`}>C</span>
+              <span className={`${letterClass} _12`}>o</span>
+              <span className={`${letterClass} _13`}> n</span>
+              <span className={`${letterClass} _14`}>t</span>
+              <span className={`${letterClass} _15`}>a</span>
+              <span className={`${letterClass} _16`}>c</span>
+              <span className={`${letterClass} _17`}>t</span>
+            </h1>
+            <div id="startButtonDiv">
+              <div className="contact-form">
+                <form ref={form} onSubmit={sendEmail}>
+                  <ul>
+                    <li>
+                      <input type="text" className="half" name="name" placeholder="Name" required />
+                      <input type="email" name="email" placeholder="Email" required />
+                    </li>
+                    <li>
+                      <input type="text" name="subject" placeholder="Subject" required />
+                    </li>
+                    <li>
+                      <textarea name="message" placeholder="Message" required />
+                    </li>
+                    <li className="contact-button">
+                      <input type="submit" value="Send" />
+                    </li>
+                  </ul>
+                </form>
+              </div>
             </div>
-          </div>
-          <div>
-            <a href="mailto:willboahacheampong@gmail.con">
-              <FaRegEnvelope className="icon" />
-            </a>
-            <a href="https://www.github.com/billboah">
-              <FaGithub className="icon" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/william-yeboah-968090238/"
-              target="_blank"
-              rel="noreferrer">
-              <FaLinkedin className="icon" />
-            </a>
-          </div>
-        </section>
+            <div>
+              <a href="mailto:willboahacheampong@gmail.con">
+                <FaRegEnvelope className="icon" />
+              </a>
+              <a href="https://www.github.com/billboah">
+                <FaGithub className="icon" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/william-yeboah-968090238/"
+                target="_blank"
+                rel="noreferrer">
+                <FaLinkedin className="icon" />
+              </a>
+            </div>
+          </section>
 
-        <footer id="footer">
-          <div className="row text-center">
-            <div className="small-12 medium-6 medium-offset-3 columns">
-              <p id="logo">BY</p>
-              <p id="copyright">Copyright &copy; 2022 | Billboah</p>
+          <footer id="footer">
+            <div className="row text-center">
+              <div className="small-12 medium-6 medium-offset-3 columns">
+                <p id="logo">BY</p>
+                <p id="copyright">Copyright &copy; 2022 | Billboah</p>
+              </div>
             </div>
-          </div>
-        </footer>
+          </footer>
+        </div>
       </div>
       <Loader type="pacman" />
     </div>

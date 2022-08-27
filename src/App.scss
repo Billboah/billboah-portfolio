@@ -3,17 +3,18 @@
 
 .app-body {
   margin: 0;
-  padding: 0;
-  height: 100vh;
-  overflow: hidden;
+  padding: 30px 30px;
+  height: 100%;
+  min-height: 100vh;
+  min-width: fit-content;
 }
 
 .app{
-  margin: 30px 30px;
+  margin: 0;
   padding: 0;
   border-radius: 20px;
-  height: 92vh;
-  min-height: fit-content;
+  height: 100%;
+  min-height: 90vh;
   min-width: fit-content;
 }
 .dark-theme{
@@ -42,9 +43,8 @@
 }
 
 .body{
-  height: 83vh;
-  overflow-y: scroll;
-}
+  height: 100%;
+ }
 
 .container{
   width: 100%;
@@ -59,12 +59,13 @@
 .contact_button_link{
   text-decoration: none;
   width: fit-content;
+  margin-top: 20px;
 }
 
 .contact_button{
   width: fit-content;
   cursor: pointer;
-  padding: 15px 30px;
+  padding: 10px 25px;
   font-weight: 700;
   border-radius: 15px;
   color: white;
@@ -90,21 +91,11 @@
   .contact_button{
     font-size: 10px;
   }
-  .app{
-    margin: 15px 15px;
-    height: 95vh;
-  }
-  .body{
-    height: 86vh;
+  .app-body{
+    padding: 15px 15px;
   }
 }
 @media (max-height: 550px){
-  .app{
-    height: 90vh;
-  }
-  .body{
-    height: 74vh;
-  }
   .contact_button{
     font-size: 10px;
   }
