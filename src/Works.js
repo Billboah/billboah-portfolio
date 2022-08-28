@@ -65,7 +65,7 @@ const Works = () => {
               <h4>Technologies used include:</h4>
               <ul>
                 <li>Next JS</li>
-                <li>Tailwind CSS</li>
+                <li>Tailwind.css</li>
                 <li>Firebase</li>
                 <li>Mapbox api</li>
               </ul>
@@ -101,8 +101,8 @@ const Works = () => {
               </a>
               <h4>Technologies used include:</h4>
               <ul>
-                <li>React JS</li>
-                <li>Tailwind CSS</li>
+                <li>React.js</li>
+                <li>Tailwind.css</li>
                 <li>Openweathermap api</li>
               </ul>
             </div>
@@ -137,7 +137,7 @@ const Works = () => {
               </a>
               <h4>Technologies used include:</h4>
               <ul>
-                <li>React JS</li>
+                <li>React.js</li>
                 <li>CSS</li>
                 <li>Firebase</li>
               </ul>
@@ -170,7 +170,7 @@ const Works = () => {
               </a>
               <h4>Technologies used include:</h4>
               <ul>
-                <li>React JS</li>
+                <li>React.js</li>
                 <li>CSS</li>
                 <li>IP Geolocation api</li>
                 <li>WorldTime api</li>
