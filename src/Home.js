@@ -55,10 +55,7 @@ const Home = () => {
                 <a href="https://www.github.com/billboah">
                   <FaGithub className="icon" />
                 </a>
-                <a
-                  href="https://www.linkedin.com/in/william-yeboah-968090238/"
-                  target="_blank"
-                  rel="noreferrer">
+                <a href="https://www.linkedin.com/in/billboah" target="_blank" rel="noreferrer">
                   <FaLinkedin className="icon" />
                 </a>
               </div>
@@ -99,10 +96,7 @@ const Home = () => {
               <a href="https://www.github.com/billboah">
                 <FaGithub className="icon" />
               </a>
-              <a
-                href="https://www.linkedin.com/in/william-yeboah-968090238/"
-                target="_blank"
-                rel="noreferrer">
+              <a href="https://www.linkedin.com/in/billboah" target="_blank" rel="noreferrer">
                 <FaLinkedin className="icon" />
               </a>
             </div>
