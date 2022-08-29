@@ -13,24 +13,22 @@ function App() {
 
   return (
     <Router>
-      <div className={`app-body ${theme}`}>
-        <div className="app">
-          <Navbar />
-          <Switch>
-            <Route path="/works">
-              <Works />
-            </Route>
-            <Route path="/about">
-              <About />
-            </Route>
-            <Route path="/contact">
-              <Contact />
-            </Route>
-            <Route path="/">
-              <Home />
-            </Route>
-          </Switch>
-        </div>
+      <div className={`app ${theme}`}>
+        <Navbar />
+        <Switch>
+          <Route path="/works">
+            <Works />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
       </div>
     </Router>
   );
